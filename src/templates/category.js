@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 
 export default function Category({ pageContext }) {
   const index = pageContext.data.index
-  console.log(index)
   const max = pageContext.data.max
   const products = []
   for (let i = 0; i < 10; i++) {

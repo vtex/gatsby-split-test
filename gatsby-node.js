@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   }
 
-  for (var i = min; i <= Math.ceil(max / 10); i++) {
+  for (var i = Math.ceil(min / 10); i <= Math.ceil(max / 10); i++) {
     createPage({
       path: `/categories/${i}`,
       component: path.resolve(`./src/templates/category.js`),
